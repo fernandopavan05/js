@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando Números</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #4b0082; 
+            color: #fff; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1#titulo {
+            font-size: 2em;
+            color: #fff;
+            background: purple;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 0;
+            border-radius: 10x;
+            cursor: pointer;
+
+        }
+
+        input#tn1,
+        input#tn2 {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+            border: 1px solid #800080;
+            font-size: 1em;
+        }
+
+        input#botao {
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            background-color: #800080;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.6s;
+        }
+
+        input#botao:hover {
+            background: #555;
+        }
+
+        div#res {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        p#par {
+            font-size: 1em;
+            margin: 10px;
+            padding: 4%;
+        }
+
+        a#voltar{
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #800080;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 3.0s;
+        }
+
+        a#voltar:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id='titulo'>Multiplicando Valores</h1>
+    <input id='tn1' type="number" name="txtn1" id="txtn1"> *
+    <input id='tn2' type="number" name="txtn2" id="txtn2">
+    <input id='botao' type="button" value="multiplicar" onclick="multiplicar()">
+    <div id='res'><strong>Resultado</strong></div>
+    <a id="voltar" href="Principal.html">Voltar à Tela Inicial</a>
+
+
+    <script>
+        var titulo = document.getElementById('titulo');
+        titulo.addEventListener('mouseenter', entrar);
+
+        function entrar() {
+            titulo.innerText = 'Multiplicando Valores! 🤙';
+            titulo.style.color = '#32CD32'; 
+        }
+
+        titulo.addEventListener('mouseout', sair);
+
+        function sair() {
+            titulo.innerText = 'Multiplicando Valores';
+            titulo.style.color = '#fff';
+        }
+
+        function multiplicar() {
+            var tn1 = document.getElementById('tn1');
+            var tn2 = document.getElementById('tn2');
+            var res = document.getElementById('res');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var soma = n1 * n2;
+            res.innerHTML = `A Multiplicação entre ${n1} e ${n2} é igual a <strong>${soma}</strong>`;
+        }
+    </script>
+</body>
+
+</html>

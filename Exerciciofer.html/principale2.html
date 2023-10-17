@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <style>
+        body {
+            padding: 0;           
+            background-color: purple;
+            color: white;
+            margin: 0;
+            font-family: arial, sans serif;
+        }
+
+
+        #container {
+            max-width: 800px; 
+            margin: 0 auto; 
+            flex-direction: column;
+            align-items: center;
+            min-height: 10vh;
+            margin-top: 50px;}
+
+        h1 {
+            font-family: Arial, sans-serif;
+            background: purple;
+            padding-left: 75px ;
+            text-align: center;
+            margin: 0;
+            background-color: black;
+            font-size: 50px;
+            flex-direction: column;
+            padding-right: 75px;
+            
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 60px;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            width: 100%; 
+}
+
+        li {
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 12px;
+            border: 3px solid white;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            
+        }
+
+        a:hover {
+            background-color: white;
+            color: purple;
+            transform: scale(1.1);
+        }
+        
+        .lista{
+            padding-left: 00px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id='container'></div>
+
+    <h1>Olá, seja bem vindo, para prosseguir escolha a operação desejada!</h1>
+
+    <ul class="lista">
+        <li><a id="adição" href="soma.html">Adição +</a></li>
+        <li><a href="subtração.html">Subtração -</a></li>
+    </ul>       
+
+</body>
+</html>

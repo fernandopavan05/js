@@ -65,7 +65,26 @@
     <input id='tn2' type="number" name="txtn2" id="txtn2">
     <input id='botao' type="button" value="Somar" onclick="somar()">
     <div id='res'><strong>Resultado.</strong></div>
-    <p id='par'>Projeto sendo desenvolvido por Fernando com a ajuda do professor Gustavo Guanabara.</p>
+   <!-- <p id='par'>Projeto sendo desenvolvido por Fernando com a ajuda do professor Gustavo Guanabara.</p>-->
+
+   <h1 id='titulo'>Subtraindo Valores/h1>
+   <input id='tn1' type="number" name="txtn1" id="txtn1"> +
+   <input id='tn2' type="number" name="txtn2" id="txtn2">
+   <input id='botao' type="button" value="Somar" onclick="somar()">
+   <div id='res'><strong>Resultado.</strong></div>
+
+   <h1 id='titulo'>Dividindo Valores</h1>
+   <input id='tn1' type="number" name="txtn1" id="txtn1"> +
+   <input id='tn2' type="number" name="txtn2" id="txtn2">
+   <input id='botao' type="button" value="Somar" onclick="somar()">
+   <div id='res'><strong>Resultado.</strong></div>
+
+
+   <h1 id='titulo'>Subtraindo Valores</h1>
+   <input id='tn1' type="number" name="txtn1" id="txtn1"> +
+   <input id='tn2' type="number" name="txtn2" id="txtn2">
+   <input id='botao' type="button" value="Somar" onclick="somar()">
+   <div id='res'><strong>Resultado.</strong></div>
 
     <script>
 
@@ -91,7 +110,7 @@
             var res = document.getElementById('res');
             var n1 = Number(tn1.value);
             var n2 = Number(tn2.value);
-            var soma = n1 + n2;
+            var soma = n1 / n2;
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${soma}!<strong/>`;
         }
     </script>
